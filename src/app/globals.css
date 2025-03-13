@@ -19,6 +19,10 @@
   background: #737373; /* bg-neutral-500 */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: black;
   color: white;

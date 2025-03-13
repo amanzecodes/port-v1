@@ -35,7 +35,7 @@ const Projects: FC = () => {
         <h2 className="text-4xl md:text-7xl lg:text-8xl">Selected Works</h2>
         <div className="mt-10 md:mt-16 lg:mt-20">
           {projects.map(({ name, image }) => (
-            <a href="#" key={name} className="border-white/25 border-t last:border-b border-dotted py-6 md:py-8 lg:py-10 flex flex-col">
+            <a href="#hero" key={name} className="border-white/25 border-t last:border-b border-dotted py-6 md:py-8 lg:py-10 flex flex-col">
               <div className="">
                 <div className="aspect-video md:hidden">
                 <Image src={image} alt={name} className="size-full object-cover"/>
