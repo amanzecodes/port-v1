@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Button } from "../ui/moving-border";
+import { ArrowDown } from "lucide-react";
 const BackgroundGrid = (props: { children?: React.ReactNode }) => {
   return (
     <div className="relative h-screen w-full overflow-hidden top-0 pb-20">
@@ -72,14 +73,28 @@ const BackgroundGrid = (props: { children?: React.ReactNode }) => {
               I'm Amanze Bruno, a fullstack developer based in Nigeria
             </p>
 
-            <div className="mt-[100px]">
+            <div className="mt-[100px] flex items-center justify-center">
               <Button
                 borderRadius="1rem"
                 containerClassName="w-52 cursor-pointer"
                 duration={2500}
                 className="bg-white/5 text-white border-slate-800 font-medium"
               >
-                Explore My Work
+                <span className="flex items-center gap-2">
+                  {" "}
+                  {/* Use `gap-2` to add space */}
+                  Explore My Work
+                  <motion.div
+                    animate={{ y: [0, 4, 0] }} // Moves up and down
+                    transition={{
+                      repeat: Infinity,
+                      duration: 1.5,
+                      ease: "easeInOut",
+                    }} // Smooth infinite animation
+                  >
+                    <ArrowDown size={24} />
+                  </motion.div>
+                </span>
               </Button>
             </div>
           </div>
