@@ -1,7 +1,7 @@
 "use client";
 
 const navLinks = [
-  { label: "About", href: "#" },
+  { label: "About", href: "#about" },
   { label: "Project", href: "#projects" },
   { label: "Connect", href: "#integrations" }
 ];
@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex items-center justify-between p-8">
           <div>
             <p className="text-xl font-medium cursor-pointer relative z-10 hover:scale-105 transition duration-500">
-              <span className="text-[17px] font-bold">&copy; </span>Amanze Bruno.
+              <span className="font-bold">&copy; </span>Amanze Bruno.
             </p>
           </div>
           <div className="flex flex-row gap-10 text-lg font-medium cursor-pointer">

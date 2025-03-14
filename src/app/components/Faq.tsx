@@ -1,9 +1,9 @@
 import React from "react";
 const faqs = [
   {
-    question: "Who are you?",
+    question: "How can I contact you?",
     answer:
-      "I am Amanze Bruno, a student at Covenant University currently studying Computer Science. I am also a web developer passionate about building scalable and interactive web applications.",
+      "You can reach me through my email, LinkedIn, or the contact form on my website. I typically respond within 24 hours.",
   },
   {
     question: "What do you specialize in?",
@@ -26,18 +26,18 @@ const Faq = () => {
   return (
     <section
       id="faqs"
-      className="py-24 mt-12 md:py-32 lg:py-40 md:mt-16 lg:mt-10"
+      className="py-20 mt-12 md:py-32 lg:py-40 md:mt-16 lg:mt-10"
     >
       <div className="mx-auto px-2">
-        <h2 className="text-4xl md:text-7xl">FAQS</h2>
-        <div className="mt-10 md:mt-16">
+        <h2 className="text-4xl md:text-7xl lg:text-8xl">FAQS</h2>
+        <div className="mt-10 md:mt-16 lg:mt-20">
           {faqs.map(({ question, answer }) => (
             <div
               key={question}
-              className="border-t border-stone-400 border-dotted py-6 md:py-8 last:border-b"
+              className="border-t border-stone-400 border-dotted py-6 md:py-8 lg:py-10 last:border-b"
             >
               <div className="flex items-center justify-between gap-4">
-                <div className="text-2xl md:text-3xl">{question}</div>
+                <div className="text-2xl md:text-3xl lg:text-4xl">{question}</div>
                 <div className="inline-flex items-center justify-center size-11 border border-stone-400 rounded-full shrink-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
