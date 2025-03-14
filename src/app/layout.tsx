@@ -1,23 +1,13 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Montserrat } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
+const archivo = Archivo({
+  display: "swap",
+  weight: "variable",
   subsets: ["latin"],
-  weight: ["400", "700"], // Choose the font weights you need
-  variable: "--font-montserrat", // Optional for Tailwind integration
-});
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+  variable: '--font-archivo'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={montserrat.className}
+        className={`antialiased ${archivo.variable} font-sans`}
       >
         {children}
       </body>

@@ -1,3 +1,4 @@
+import { FC } from "react";
 import image1 from "../../../assets/images/image1.png";
 import image2 from "../../../assets/images/image2.png";
 import image3 from "../../../assets/images/image3.png";
@@ -30,15 +31,15 @@ const projects = [
 
 const Projects: FC = () => {
   return (
-    <section className="py-24 md:py-32 lg:py-40">
-      <div className="container mx-auto px-2">
+    <section id="projects" className="py-24 md:py-32 lg:py-40">
+      <div className="mx-auto px-2">
         <h2 className="text-4xl md:text-7xl lg:text-8xl">Selected Works</h2>
         <div className="mt-10 md:mt-16 lg:mt-20">
           {projects.map(({ name, image }) => (
-            <a href="#hero" key={name} className="border-white/25 border-t last:border-b border-dotted py-6 md:py-8 lg:py-10 flex flex-col">
+            <a href="#hero" key={name} className="border-black/25 border-t last:border-b border-dotted py-6 md:py-8 lg:py-10 flex flex-col">
               <div className="">
                 <div className="aspect-video md:hidden">
-                <Image src={image} alt={name} className="size-full object-cover"/>
+                <Image src={image} alt={name} className="size-full object-cover rounded-sm border border-blue-800"/>
                 </div>
                 <div className="mt-8 md:mt-0 flex justify-between items-center">
                   <h3 className="text-2xl md:text-3xl lg:text-4xl">{name}</h3>
