@@ -5,11 +5,11 @@ import Projects from "./components/Projects";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden">
     <Header />
     <Hero />
-    <Projects />
     <Intro />
-    </>
+    <Projects />
+    </div>
   );
 }

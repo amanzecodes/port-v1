@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 8px; /* Adjust width as needed */
+  width: 8px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
