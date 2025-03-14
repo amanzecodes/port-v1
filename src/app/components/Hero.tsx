@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
         <div className="max-w-[60%] flex flex-col">
           <div className="flex items-center justify-center">
-            <h1 className="text-[40px] md:text-5xl lg:text-7xl font-semibold text-center text-neutral-900">
+            <h1 className="text-[40px] md:text-5xl lg:text-7xl font-semibold text-center">
               Crafting Modern Web <Cover>Applications</Cover>
             </h1>
           </div>

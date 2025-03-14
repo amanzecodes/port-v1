@@ -12,7 +12,7 @@ const Header = () => {
       <header className="absolute top-0 left-0 w-full z-10">
         <div className="flex items-center justify-between p-8">
           <div>
-            <p className="text-xl font-medium cursor-pointer relative z-10">
+            <p className="text-xl font-medium cursor-pointer relative z-10 hover:scale-105 transition duration-500">
               <span className="text-[17px] font-bold">&copy; </span>Amanze Bruno.
             </p>
           </div>
