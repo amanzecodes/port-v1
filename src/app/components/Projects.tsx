@@ -8,23 +8,23 @@ import Image from "next/image";
 
 const projects = [
   {
-    name: "Artisan Brew Co.",
+    name: "Spotify Clone",
     image: image1,
   },
   {
-    name: "Wavelength Studios",
+    name: "Layers",
     image: image2,
   },
   {
-    name: "Nova Fitness",
+    name: "Virtual CU",
     image: image3,
   },
   {
-    name: "Urban Plates",
+    name: "Saas Landing Page",
     image: image4,
   },
   {
-    name: "Bloom Botanicals",
+    name: "My Portfolio",
     image: image5,
   },
 ];
