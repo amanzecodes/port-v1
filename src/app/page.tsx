@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Faq from "./components/Faq";
 import Stack from "./components/Stack";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
     <Stack />
     <About />
     <Faq />
+    <Footer />
     </div>
   );
 }

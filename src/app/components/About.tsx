@@ -9,7 +9,7 @@ const About = () => {
             <div className="max-w-[700px]">
               <div className="flex flex-col gap-6">
                 <p className="text-xl md:text-2xl lg:text-4xl">
-                  I study Computer Science at Covenant University with a passion for web development. I'm experienced in Next.js &amp; TypeScript, Framer Motion, and Tailwind CSS.
+                I study Computer Science at Covenant University with a passion for web development. I'm experienced in Next.js &amp; TypeScript, Framer Motion, and Tailwind CSS.
                 </p>
                 <p className="text-xl md:text-2xl lg:text-4xl">
                   Apart from coding, I enjoy gaming, exploring new tech trends, and Amapiano. I am also a huge fan of Mark Zuckerberg, I wish to be better one day.
