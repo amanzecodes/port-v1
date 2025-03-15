@@ -33,24 +33,32 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-wrap justify-center mt-12 gap-5">
-          <a href="#projects" className="bg-stone-900 h-11 px-6 uppercase items-center justify-center flex gap-2 rounded-2xl">
-              <p className="text-white">View my work</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="size-6 text-white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
-                />
-              </svg>
+          <a
+            href="#projects"
+            className="bg-stone-900 h-11 px-6 uppercase items-center justify-center flex gap-2 rounded-2xl"
+          >
+            <p className="text-white">View my work</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-6 text-white"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+              />
+            </svg>
           </a>
-          <a href="#contact" className="uppercase rounded-2xl border border-black px-6 h-11 flex items-center justify-center">Let's Connect</a>
+          <a
+            href="#contact"
+            className="uppercase rounded-2xl border border-black px-6 h-11 flex items-center justify-center"
+          >
+            Let's Connect
+          </a>
         </div>
       </div>
     </section>

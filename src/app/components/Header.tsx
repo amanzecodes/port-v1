@@ -7,7 +7,7 @@ import { useMouse } from "react-use";
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Project", href: "#projects" },
-  { label: "Connect", href: "#integrations" },
+  { label: "Connect", href: "#contact" },
 ];
 
 const Header = () => {
@@ -112,17 +112,18 @@ const Header = () => {
               duration: 4,
             }}
           >
-            <div className="p-4 md:p-5 lg:p-6 border-white bg-[#1c1d20] border rounded-full flex items-center justify-center">
+            <div className="p-2 md:p-5 lg:p-6 border-white bg-[#1c1d20] border rounded-full flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="text-white text-2xl w-6 h-6 md:w-8 md:h-8"
+                strokeWidth="0.5"
+                className="text-white font-thin text-xl w-6 h-6 md:w-8 md:h-8"
               >
-                <rect x="3" y="15" width="18" height="2" fill="currentColor" />
-                <rect x="3" y="7" width="18" height="2" fill="currentColor" />
+                <rect x="3" y="15" width="18" height="2" strokeWidth="0.5" fill="currentColor" />
+                <rect x="3" y="7" width="18" height="2" strokeWidth="0.5" fill="currentColor" />
               </svg>
             </div>
           </motion.div>
