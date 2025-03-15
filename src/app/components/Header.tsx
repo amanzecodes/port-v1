@@ -58,6 +58,8 @@ const Header = () => {
               <span className="font-bold">&copy; </span>Amanze Bruno.
             </a>
           </div>
+          
+          {/* Desktop Nav Links */}
           <div className="hidden md:flex flex-row gap-10 text-lg font-medium cursor-pointer">
             {navLinks.map((link, index) => (
               <a
@@ -70,8 +72,26 @@ const Header = () => {
               </a>
             ))}
           </div>
+
+          {/* Static SVG for small/medium screens when nav links disappear */}
+          <div className="md:hidden flex">
+            <div className="p-4 border-stone-400 border rounded-full flex items-center justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                className="text-black text-2xl"
+              >
+                <rect x="3" y="15" width="18" height="2" fill="currentColor" />
+                <rect x="3" y="7" width="18" height="2" fill="currentColor" />
+              </svg>
+            </div>
+          </div>
         </div>
       </header>
+
       <AnimatePresence>
         {showHamburger && (
           <motion.div
@@ -92,14 +112,14 @@ const Header = () => {
               duration: 4,
             }}
           >
-            <div className="p-7 border-white bg-[#1c1d20] border rounded-full inline-flex items-center justify-center mr-2">
+            <div className="p-4 md:p-5 lg:p-6 border-white bg-[#1c1d20] border rounded-full flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="text-white text-2xl"
+                className="text-white text-2xl w-6 h-6 md:w-8 md:h-8"
               >
                 <rect x="3" y="15" width="18" height="2" fill="currentColor" />
                 <rect x="3" y="7" width="18" height="2" fill="currentColor" />
