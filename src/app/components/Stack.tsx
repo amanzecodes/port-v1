@@ -9,7 +9,7 @@ export default function CallToAction() {
   const [scope, animate] = useAnimate();
 
   useEffect(() => {
-    animate("[data-animate]", { x: "-50%" }, { duration: isHovered ? 60 : 40, ease: "linear", repeat: Infinity });
+    animate("[data-animate]", { x: "-50%" }, { duration: isHovered ? 65 : 40, ease: "linear", repeat: Infinity });
   }, [isHovered, animate]);
 
   return (

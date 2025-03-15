@@ -12,12 +12,12 @@ const Header = () => {
       <header className="absolute top-0 left-0 w-full z-10">
         <div className="flex items-center justify-between p-8">
           <div>
-            <p className="text-xl font-medium cursor-pointer relative z-10 hover:scale-105 transition duration-500">
+            <a href="/" className="text-lg md:text-xl font-medium cursor-pointer relative z-10 hover:scale-105 transition duration-500">
               <span className="font-bold">&copy; </span>Amanze Bruno.
-            </p>
+            </a>
           </div>
-          <div className="flex flex-row gap-10 text-lg font-medium cursor-pointer">
-            {navLinks.map((link,index) => (
+          <div className="hidden md:flex flex-row gap-10 text-lg font-medium cursor-pointer">
+            {navLinks.map((link, index) => (
               <a
                 key={index}
                 href={link.href}
