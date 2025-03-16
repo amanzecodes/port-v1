@@ -3,7 +3,6 @@ import React, { useEffect, useId, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useRef } from "react";
 import { cn } from "../../lib/utils";
-import { SparklesCore } from "../../components/ui/sparkle";
 
 export const Cover = ({
   children,
@@ -112,7 +111,7 @@ export const Cover = ({
           },
         }}
         className={cn(
-          "dark:text-white inline-block text-neutral-900 relative z-20 group-hover/cover:text-white transition duration-200",
+          "dark:text-white inline-block text-neutral-900 relative z-5 group-hover/cover:text-white transition duration-200",
           className
         )}
       >
