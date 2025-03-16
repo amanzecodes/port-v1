@@ -1,13 +1,27 @@
 "use client";
+import { useState, useEffect } from "react";
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 5000); // Change at 200px scroll
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 w-full z-30 backdrop-blur-md bg-white/30 shadow-md">
+    <header className="fixed top-0 left-0 w-full z-30 backdrop-blur-md bg-white/30 shadow-md transition-colors duration-300">
       <div className="flex items-center justify-between w-full mx-auto px-4 py-2">
         {/* Logo */}
         <a
           href="/"
-          className="text-lg md:text-xl font-medium cursor-pointer relative z-2 hover:scale-105 transition duration-500 text-black"
+          className={`text-lg md:text-xl font-medium cursor-pointer relative z-2 hover:scale-105 transition duration-500 ${
+            isScrolled ? "text-white" : "text-black"
+          }`}
         >
           Amanze Bruno.
         </a>
@@ -15,7 +29,11 @@ const Header = () => {
         {/* Right Side - Menu Icon + Contact Button */}
         <div className="flex flex-row gap-10 text-center items-center">
           {/* Menu Icon */}
-          <div className="border border-stone-500 rounded-full p-2 cursor-pointer hover:bg-stone-900 hover:text-white transition">
+          <div
+            className={`border rounded-full p-2 cursor-pointer hover:bg-stone-900 transition ${
+              isScrolled ? "border-stone-200 text-white" : "border-stone-500 text-black"
+            }`}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -28,11 +46,15 @@ const Header = () => {
             </svg>
           </div>
 
-          {/* Contact Button - Visible only on Medium+ Screens */}
+          {/* Contact Button */}
           <div className="hidden md:flex justify-center items-center">
             <a
               href="mailto:brunoamanze67@gmail.com"
-              className="px-6 h-11 flex items-center justify-center border-2 border-stone-400 rounded-2xl hover:bg-stone-900 hover:text-white transition"
+              className={`px-6 h-11 flex items-center justify-center border-2 rounded-2xl transition ${
+                isScrolled
+                  ? "border-stone-400 text-white"
+                  : "border-stone-400 text-black"
+              } hover:bg-stone-900 hover:text-white`}
             >
               Contact me
             </a>

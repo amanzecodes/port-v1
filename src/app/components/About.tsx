@@ -1,14 +1,43 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
-    <section id="about" className="py-20 mt-20">
+    <motion.section
+      id="about"
+      className="py-20 mt-20"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
       <div className="mx-auto px-4">
-        <div className="flex flex-col md:flex-col lg:flex-row w-full justify-between items-center py-10 border-t border-b border-dotted border-black/25 gap-6 md:gap-8">
-          <div>
+        <motion.div
+          className="flex flex-col md:flex-col lg:flex-row w-full justify-between items-center py-10 border-t border-b border-dotted border-black/25 gap-6 md:gap-8"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
             <h2 className="text-xl md:text-3xl lg:text-4xl font-thin">
               About Me
             </h2>
-          </div>
-          <div className="max-w-[700px]">
+          </motion.div>
+
+          <motion.div
+            className="max-w-[700px]"
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <div className="flex flex-col gap-6">
               <p className="text-xl md:text-2xl lg:text-4xl">
                 "I build modern, responsive websites and full-stack applications
@@ -27,10 +56,10 @@ const About = () => {
                 Always eager to learn, I seek opportunities for growth."
               </p>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

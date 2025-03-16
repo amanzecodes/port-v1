@@ -38,8 +38,8 @@ const Hero = () => {
 
         {/* Subtitle (Now with Animation) */}
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1}}
           transition={{ duration: 0.5, delay: 0.8 }}
           ref={textScope}
           className="font-medium text-lg sm:text-xl mt-6 sm:mt-8"
@@ -49,8 +49,8 @@ const Hero = () => {
 
         {/* Buttons */}
         <motion.div
-          initial={{ opacity: 0, y: "100%" }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0,}}
+          animate={{ opacity: 1}}
           transition={{ duration: 0.5, delay: 1 }}
           className="flex flex-col md:flex-row items-center justify-center mt-14 md:mt-12 gap-4 md:gap-6"
         >
