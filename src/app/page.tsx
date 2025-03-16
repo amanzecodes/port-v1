@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Header from "./components/Header";
+
 import Hero from "./components/Hero";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
@@ -18,7 +18,7 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
-      <Header />
+      
       <Hero />
       <Intro />
       <Projects />

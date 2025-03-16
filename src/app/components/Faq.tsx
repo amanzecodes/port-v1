@@ -28,7 +28,7 @@ const Faq = () => {
       id="faqs"
       className="py-20 mt-12 md:py-32 lg:py-40 md:mt-16 lg:mt-10"
     >
-      <div className="mx-auto px-2">
+      <div className="container">
         <h2 className="text-4xl md:text-7xl lg:text-8xl">FAQS</h2>
         <div className="mt-10 md:mt-16 lg:mt-20">
           {faqs.map(({ question, answer }) => (

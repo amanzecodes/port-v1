@@ -34,7 +34,15 @@ module.exports = {
           },
         },
       },
-
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "10px", // Reduced padding
+          sm: "5px",        // Slightly more on small screens
+          lg: "5px",        // Adjust for larger screens
+        },
+      },
+      
       screens: {
         sm: "375px",
         md: "768px",
