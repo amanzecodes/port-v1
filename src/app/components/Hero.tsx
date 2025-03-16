@@ -24,7 +24,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 min-h-screen text-center">
+    <section id="hero" className="flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 min-h-screen text-center">
       <div className="w-full max-w-4xl container">
         <motion.h1
           initial={{ opacity: 0 }}
@@ -41,7 +41,8 @@ const Hero = () => {
           ref={textScope}
           className="font-medium text-lg sm:text-xl mt-4 sm:mt-6"
         >
-          Hi 👋 I&apos;m Amanze Bruno, a full-stack web developer based in Lagos, Nigeria.
+          Hi 👋 I&apos;m Amanze Bruno, a full-stack web developer based in
+          Lagos, Nigeria.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
@@ -51,9 +52,32 @@ const Hero = () => {
         >
           <a
             href="#projects"
-            className="bg-stone-900 h-11 px-6 uppercase flex items-center justify-center gap-2 rounded-2xl text-white hover:bg-stone-800 transition"
+            className="bg-stone-900 h-11 px-6 mt-8 uppercase flex items-center justify-center gap-2 rounded-2xl text-white hover:bg-stone-800 transition"
           >
-            View my work
+            View my work{" "}
+            <motion.svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-6"
+              animate={{
+                y: [0, -3, 0], // Move up and down
+              }}
+              transition={{
+                duration: 1.5, // 1-second loop
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+              />
+            </motion.svg>
           </a>
         </motion.div>
       </div>
