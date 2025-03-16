@@ -7,26 +7,11 @@ import image5 from "../../../assets/images/image5.png";
 import Image from "next/image";
 
 const projects = [
-  {
-    name: "Spotify Clone",
-    image: image1,
-  },
-  {
-    name: "Layers",
-    image: image2,
-  },
-  {
-    name: "Virtual CU",
-    image: image3,
-  },
-  {
-    name: "Saas Landing Page",
-    image: image4,
-  },
-  {
-    name: "My Portfolio",
-    image: image5,
-  },
+  { name: "Spotify Clone", image: image1 },
+  { name: "Layers", image: image2 },
+  { name: "Virtual CU", image: image3 },
+  { name: "Saas Landing Page", image: image4 },
+  { name: "My Portfolio", image: image5 },
 ];
 
 const Projects: FC = () => {
@@ -36,11 +21,23 @@ const Projects: FC = () => {
         <h2 className="text-4xl md:text-7xl lg:text-8xl">Selected Works</h2>
         <div className="mt-10 md:mt-16 lg:mt-20">
           {projects.map(({ name, image }) => (
-            <a href="#hero" key={name} className="border-black/25 border-t last:border-b border-dotted py-6 md:py-8 lg:py-10 flex flex-col">
+            <a 
+              href="#hero" 
+              key={name} 
+              className="border-black/25 border-t last:border-b border-dotted py-6 md:py-8 lg:py-10 flex flex-col"
+            >
               <div className="">
-                <div className="aspect-video md:hidden">
-                <Image src={image} alt={name} className="size-full object-cover rounded-sm border border-blue-800"/>
+                <div className="aspect-video md:hidden relative overflow-hidden rounded-lg">
+                  {/* Image with styles */}
+                  <Image 
+                    src={image} 
+                    alt={name} 
+                    className="size-full object-cover rounded-lg border border-gray-200 shadow-md transition-transform duration-300 hover:scale-105"
+                  />
+                  {/* Optional Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 rounded-lg"></div>
                 </div>
+
                 <div className="mt-8 md:mt-0 flex justify-between items-center">
                   <h3 className="text-2xl md:text-3xl lg:text-4xl">{name}</h3>
                   <svg

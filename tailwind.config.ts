@@ -13,6 +13,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        "red-orange": "#FF4500", // Adjust hex code as needed
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },
