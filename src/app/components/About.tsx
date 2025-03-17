@@ -14,7 +14,7 @@ const About = () => {
     >
       <div className="container">
         <motion.div
-          className="flex flex-col md:flex-col lg:flex-row w-full justify-between items-center py-10 border-t border-b border-dotted border-black/25 gap-6 md:gap-8"
+          className="flex flex-col md:flex-col lg:flex-row w-full justify-between items-center py-10 border-t border-b border-dotted border-stone-200 gap-6 md:gap-8"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}

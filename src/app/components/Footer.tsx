@@ -1,6 +1,9 @@
 "use client "
-import React from "react";
-import { useTextRevealAnimation } from "@/hooks/useTextRevealAnimation"; // Update the path accordingly
+import React, { useEffect } from "react";
+import useTextReveal from "../hooks/useTextReveal";
+import { useInView } from "framer-motion";
+import { motion } from "framer-motion";
+
 
 
 const navItems = [
@@ -27,26 +30,37 @@ const navItems = [
 ];
 
 const Footer = () => {
-  const {scope, entranceAnimation} = useTextRevealAnimation();
+  const {scope, entranceAnimation} = useTextReveal();
+  const inView = useInView(scope, { once: true });
+
+  useEffect(() => {
+    if(inView){
+      entranceAnimation();
+    }
+  }, [inView, entranceAnimation])
   return (
-    <footer id="contact" className="bg-stone-900 text-white">
+    <footer id="contact" className="bg-[#0e1016] text-white">
       <div className="container">
         <div className="py-24 md:py-32 lg:py-40">
           <div className="flex items-center gap-3">
-            <div className="size-3 rounded-full bg-green-400"></div>
+            <div className="size-3 rounded-full bg-green-400 animate-pulse"></div>
             <span>Available for work</span>
           </div>
           <div className="grid md:grid-cols-3 md:items-center">
             <div className="md:col-span-2">
-              <h2 className="text-4xl md:text-7xl lg:text-8xl mt-8 font-extralight">
+              <motion.h2 
+              ref={scope}
+              className="text-4xl md:text-7xl lg:text-8xl mt-8 font-extralight">
                 Enough Talk. Let's Make something great together.
-              </h2>
+              </motion.h2>
               <a
                 href="mailto:brunoamanze67@gmail.com"
                 className="uppercase rounded-2xl border border-lime-400 px-6 h-11 w-[300px] flex items-center justify-center mt-4 "
               >
                 <div className="flex">
                 <span>brunoamanze67@gmail.com</span>
+                <div>
+                  <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -61,6 +75,8 @@ const Footer = () => {
                     d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                   />
                 </svg>
+                </div>
+                </div>
                 </div>
               </a>
             </div>

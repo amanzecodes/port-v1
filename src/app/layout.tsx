@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ${archivo.variable} font-sans bg-stone-200 text-stone-900`}
+        className={`antialiased ${archivo.variable} font-sans bg-[#0e1016] text-stone-200`}
       >
         <Header />
         {children}

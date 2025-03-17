@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import SplitType from "split-type";
 
 
-function useTextRevealanimation() {
+function useTextReveal() {
     const [scope, animate] = useAnimate();
     useEffect(() => {
         new SplitType(scope.current, {
@@ -13,11 +13,11 @@ function useTextRevealanimation() {
 }, [scope])
 
 const entranceAnimation = () => {
-    return animate(scope.current.querySeclectorAll('.word'), {
+    return animate(scope.current.querySelectorAll('.word'), {
         transform: 'translateY(0)',
     }, {
-        duration: .5,
-        delay: stagger(.2)
+        duration: 0.5,
+        delay: stagger(0.2)
     })
 }
   return {
@@ -25,4 +25,5 @@ const entranceAnimation = () => {
   }
 }
 
-export default useTextRevealanimation
+export default useTextReveal;
+
