@@ -10,6 +10,9 @@ import Stack from "./components/Stack";
 import About from "./components/About";
 import Footer from "./components/Footer";
 
+import Header from "./components/Header";
+
+
 
 export default function Home() {
   return (
@@ -19,7 +22,8 @@ export default function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
-      
+     
+     <Header />
       <Hero />
       <Intro />
       <Projects />
@@ -27,6 +31,7 @@ export default function Home() {
       <About />
       <Faq />
       <Footer />
+      
     </motion.div>
   );
 }

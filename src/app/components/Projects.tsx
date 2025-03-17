@@ -24,7 +24,7 @@ const Projects: FC = () => {
               href={href}
               key={name}
               target="_blank"
-              className="border-black/25 font-thin border-t last:border-b border-dotted py-6 md:py-8 lg:py-12 flex flex-col relative group/project"
+              className="border-stone-200 font-thin border-t last:border-b border-dotted py-6 md:py-8 lg:py-12 flex flex-col relative group/project"
             >
               <div className="absolute bottom-0 left-0 w-full h-0 group-hover/project:h-full transition-all duration-700 bg-[#212531]"></div>
               <div className="relative">
@@ -32,9 +32,8 @@ const Projects: FC = () => {
                   <Image
                     src={image}
                     alt={name}
-                    className="size-full object-cover border border-gray-200 shadow-md transition-transform duration-300 hover:scale-105"
+                    className="size-full object-cover shadow-md transition-transform duration-300 hover:scale-105"
                   />
-
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 rounded-lg"></div>
                 </div>
 
@@ -47,7 +46,7 @@ const Projects: FC = () => {
                       <Image
                         src={image}
                         alt={name}
-                        className="size-full object-cover border border-gray-200 shadow-md transition-transform duration-300 hover:scale-105"
+                        className="size-full object-cover shadow-md transition-transform duration-300 hover:scale-105"
                       />
                     </div>
                   </div>
