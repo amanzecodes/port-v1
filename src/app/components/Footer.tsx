@@ -1,4 +1,7 @@
+"use client "
 import React from "react";
+import { useTextRevealAnimation } from "@/hooks/useTextRevealAnimation"; // Update the path accordingly
+
 
 const navItems = [
   {
@@ -24,6 +27,7 @@ const navItems = [
 ];
 
 const Footer = () => {
+  const {scope, entranceAnimation} = useTextRevealAnimation();
   return (
     <footer id="contact" className="bg-stone-900 text-white">
       <div className="container">
@@ -39,7 +43,7 @@ const Footer = () => {
               </h2>
               <a
                 href="mailto:brunoamanze67@gmail.com"
-                className="uppercase rounded-2xl border border-lime-400 px-6 h-11 w-[300px] flex items-center justify-center mt-4"
+                className="uppercase rounded-2xl border border-lime-400 px-6 h-11 w-[300px] flex items-center justify-center mt-4 "
               >
                 <div className="flex">
                 <span>brunoamanze67@gmail.com</span>
