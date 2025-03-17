@@ -32,14 +32,14 @@ module.exports = {
             opacity: 1,
             transform: "translate(-50%,-40%) scale(1)",
           },
-        },
+        }
       },
       container: {
         center: true,
         padding: {
-          DEFAULT: "10px", // Reduced padding
-          sm: "5px",        // Slightly more on small screens
-          lg: "10px",        // Adjust for larger screens
+          DEFAULT: "10px", 
+          sm: "5px",        
+          lg: "10px",    
         },
       },
       

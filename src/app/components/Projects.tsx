@@ -2,16 +2,16 @@ import { FC } from "react";
 import image1 from "../../../assets/images/image1.png";
 import image2 from "../../../assets/images/image2.png";
 import image3 from "../../../assets/images/image3.png";
-import image4 from "../../../assets/images/image4.png";
 import image5 from "../../../assets/images/image5.png";
+import image6 from "../../../assets/images/image6.png";
 import Image from "next/image";
 
 const projects = [
-  { name: "Spotify Clone", image: image1 },
-  { name: "Layers", image: image2 },
-  { name: "Virtual CU", image: image3 },
-  { name: "Saas Landing Page", image: image4 },
-  { name: "My Portfolio", image: image5 },
+  { name: "Spotify Clone", image: image1, href: "#"},
+  { name: "Layers", image: image2, href: "https://layers-sigma.vercel.app/"},
+  { name: "Virtual CU", image: image3, href: "#"},
+  { name: "Saas Landing Page", image: image5, href: "https://amanze-saas.vercel.app/"},
+  { name: "My Portfolio", image: image6, href: "http://localhost:3000/"},
 ];
 
 const Projects: FC = () => {
@@ -20,15 +20,16 @@ const Projects: FC = () => {
       <div className="container">
         <h2 className="text-4xl md:text-7xl lg:text-8xl">Selected Works</h2>
         <div className="mt-10 md:mt-16 lg:mt-20">
-          {projects.map(({ name, image }) => (
+          {projects.map(({ name, image, href }) => (
             <a
-              href="#hero"
+              href={href}
               key={name}
+              target="_blank"
               className="border-black/25 border-t last:border-b border-dotted py-6 md:py-8 lg:py-12 flex flex-col relative group/project"
             >
               <div className="absolute bottom-0 left-0 w-full h-0 group-hover/project:h-full transition-all duration-700 bg-stone-300"></div>
               <div className="relative">
-                <div className="aspect-video md:hidden relative overflow-hidden rounded-lg">
+                <div className="aspect-video md:hidden relative overflow-hidden">
                   <Image
                     src={image}
                     alt={name}
