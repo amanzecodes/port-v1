@@ -11,7 +11,7 @@ const archivo = Archivo({
 })
 
 export const metadata: Metadata = {
-  title: "Amanze Jnr.",
+  title: "Amanze Jnr. Portfolio",
   description: "Amanze Bruno's Portfolio",
 };
 

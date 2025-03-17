@@ -17,14 +17,14 @@ const Projects: FC = () => {
   return (
     <section id="projects" className="py-24 md:py-32 lg:py-40">
       <div className="container">
-        <h2 className="text-4xl md:text-7xl lg:text-8xl">Selected Works</h2>
+        <h2 className="text-4xl md:text-7xl lg:text-8xl font-light">Selected Works</h2>
         <div className="mt-10 md:mt-16 lg:mt-20">
           {projects.map(({ name, image, href }) => (
             <a
               href={href}
               key={name}
               target="_blank"
-              className="border-black/25 border-t last:border-b border-dotted py-6 md:py-8 lg:py-12 flex flex-col relative group/project"
+              className="border-black/25 font-thin border-t last:border-b border-dotted py-6 md:py-8 lg:py-12 flex flex-col relative group/project"
             >
               <div className="absolute bottom-0 left-0 w-full h-0 group-hover/project:h-full transition-all duration-700 bg-stone-300"></div>
               <div className="relative">

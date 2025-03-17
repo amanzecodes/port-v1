@@ -1,19 +1,22 @@
+"use client"
 import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { twMerge } from "tailwind-merge";
 const faqs = [
   {
-    question: "How can I contact you?",
+    question: "Can I collaborate with you on a project?",
     answer:
-      "You can reach me through my email, LinkedIn, or the contact form on my website. I typically respond within 24 hours.",
+      "Absolutely! I'm always open to working on exciting projects with like-minded developers, designers, and entrepreneurs. If you have a cool idea or need an extra hand on something, feel free to reach out—I’d love to hear about it!",
   },
   {
     question: "What do you specialize in?",
     answer:
-      "I specialize in full-stack web development, working primarily with Next.js, TypeScript, Tailwind CSS, Node.js, and MongoDB.",
+      "Web development, SaaS product building, e-commerce solutions, payment gateway integration,",
   },
   {
-    question: "Are you available for freelance work or internships?",
+    question: "Are you available for freelance work?",
     answer:
-      "Yes! I am open to freelance projects, internships, and collaborations that align with my expertise.",
+      "Yes! I am open to freelance projects, collaborations that align with my expertise.",
   },
   {
     question: "Can I hire you to build a website or web app?",
@@ -23,6 +26,7 @@ const faqs = [
 ];
 
 const Faq = () => {
+  const [selectIndex, setSelectIndex] = React.useState<number | null>(null);
   return (
     <section
       id="faqs"
@@ -31,14 +35,22 @@ const Faq = () => {
       <div className="container">
         <h2 className="text-4xl md:text-7xl lg:text-8xl">FAQS</h2>
         <div className="mt-10 md:mt-16 lg:mt-20">
-          {faqs.map(({ question, answer }) => (
+          {faqs.map(({ question, answer }, index) => (
             <div
               key={question}
-              className="border-t border-stone-400 border-dotted py-6 md:py-8 lg:py-10 last:border-b"
+              className="border-t border-stone-400 border-dotted cursor-pointer py-6 md:py-8 lg:py-10 last:border-b relative isolate group/faq"
+              onClick={() => {
+                if(index === selectIndex) {
+                  setSelectIndex(null)
+                } else {
+                  setSelectIndex(index)
+                }
+              }}
             >
-              <div className="flex items-center justify-between gap-4">
-                <div className="text-2xl md:text-3xl lg:text-4xl">{question}</div>
-                <div className="inline-flex items-center justify-center size-11 border border-stone-400 rounded-full shrink-0">
+              <div className={twMerge("absolute h-0 w-full bottom-0 bg-stone-300 -z-10 group-hover/faq:h-full transition-all duration-700", index === selectIndex && "h-full")}></div>
+              <div className={twMerge("flex items-center justify-between gap-4 transition-all duration-700 group-hover/faq:lg:px-8", index === selectIndex && "lg:px-8")}>
+                <div className="text-2xl md:text-3xl lg:text-4xl font-extralight">{question}</div>
+                <div className={twMerge("inline-flex items-center justify-center size-11 cursor-pointer border border-stone-400 rounded-full shrink-0 transition duration-300 bg-stone-200", index === selectIndex && "rotate-45") }>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -55,6 +67,19 @@ const Faq = () => {
                   </svg>
                 </div>
               </div>
+              <AnimatePresence>
+              {index === selectIndex && (
+                 <motion.div
+                 className="overflow-hidden lg:px-8"
+                 initial={{ height: 0 }}
+                 animate={{ height: "auto" }}
+                  exit={{ height: 0 }}
+                  transition={{ duration: .7, ease: "easeOut" }}
+                 >
+                 <p className="text-xl mt-4">{answer}</p>
+               </motion.div>
+              )}
+             </AnimatePresence>
             </div>
           ))}
         </div>

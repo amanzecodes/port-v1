@@ -24,13 +24,17 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 min-h-screen text-center">
-      <div className="w-full max-w-4xl container">
+    <section
+      id="hero"
+       className="flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 min-h-screen text-center 
+  bg-gradient-to-br from-stone-100 via-stone-200 to-gray-300 text-gray-900"
+    >
+      <div className="w-full max-w-6xl container">
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           ref={titleScope}
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-semibold leading-tight"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-extralight leading-tight"
         >
           Crafting Modern Web <span>Applications</span>
         </motion.h1>
