@@ -3,15 +3,14 @@ import image1 from "../../../assets/images/image1.png";
 import image2 from "../../../assets/images/image2.png";
 import image3 from "../../../assets/images/image3.png";
 import image5 from "../../../assets/images/image5.png";
-import image6 from "../../../assets/images/image6.png";
+import image7 from "../../../assets/images/image7.png";
 import Image from "next/image";
 
 const projects = [
-  { name: "Spotify Clone", image: image1, href: "#"},
+  { name: "XORA", image: image7, href: "https://xora-a.vercel.app/"},
   { name: "Layers", image: image2, href: "https://layers-sigma.vercel.app/"},
-  { name: "Virtual CU", image: image3, href: "#"},
+  { name: "VirtualR", image: image3, href: "https://virtual-r-one-ochre.vercel.app/"},
   { name: "Saas Landing Page", image: image5, href: "https://amanze-saas.vercel.app/"},
-  { name: "My Portfolio", image: image6, href: "http://localhost:3000/"},
 ];
 
 const Projects: FC = () => {
