@@ -92,6 +92,12 @@ const Footer = () => {
                   </div>
                 </div>
               </a>
+              <a
+                href="tel:+2347052302000"
+                className="hover:underline ml-2 mt-4"
+              >
+                +234 705 230 2000
+              </a>
             </div>
             <div className="md:col-span-1">
               <nav className="flex flex-col md:items-end gap-8 mt-16 md:mt-0">
