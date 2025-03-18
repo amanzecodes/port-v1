@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "What do you specialize in?",
     answer:
-      "Web development, SaaS product building, e-commerce solutions, payment gateway integration,",
+      "Web development, SaaS product building, e-commerce solutions, payment gateway integration.",
   },
   {
     question: "Are you available for freelance work?",
