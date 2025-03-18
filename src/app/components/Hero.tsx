@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import SplitType from "split-type";
 import { useAnimate, motion, stagger } from "framer-motion";
-import { BackgroundLines } from "./ui/background-lines";
 import { Spotlight } from "./ui/Spotlight";
 
 const Hero = () => {
@@ -35,21 +34,22 @@ const Hero = () => {
              border-b border-gray-300/50 before:absolute before:bottom-0 before:left-1/2 before:w-32 before:h-[2px] 
              before:bg-gradient-to-r before:from-transparent before:via-gray-600 before:to-transparent before:-translate-x-1/2"
     >
-      <div className="w-full max-w-6xl container">
+      <div className="w-full container">
         <Spotlight
           className="absolute-top-40 left-0 md:-top-20 md:left-60"
           fill="white"
         />
         <div className="flex items-center justify-center w-full flex-col px-4">
+          <div className="max-w-5xl sm:flex justify-center items-center">
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             ref={titleScope}
-            className="text-5xl md:text-7xl lg:text-9xl font-extralight leading-tight text-stone-200"
+            className="text-4xl md:text-7xl lg:text-8xl font-extralight leading-tight text-stone-200"
           >
             Crafting Modern Web <span>Applications</span>
           </motion.h1>
-
+          </div>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

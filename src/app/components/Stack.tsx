@@ -13,7 +13,7 @@ export default function CallToAction() {
   }, [isHovered, animate]);
 
   return (
-    <section className="py-16" ref={scope}>
+    <section id="stack" className="py-16" ref={scope}>
       <div className="flex w-full justify-center items-center py-6">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-thin">My Tech Stack</h1>
       </div>
