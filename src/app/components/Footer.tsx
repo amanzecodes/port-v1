@@ -92,12 +92,16 @@ const Footer = () => {
                   </div>
                 </div>
               </a>
+              <div className="mt-4">
               <a
-                href="tel:+2347052302000"
-                className="hover:underline ml-2 mt-4"
+                href="https://wa.me/2347052302000"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline ml-2"
               >
-                +234 705 230 2000
+                Chat on WhatsApp
               </a>
+              </div>
             </div>
             <div className="md:col-span-1">
               <nav className="flex flex-col md:items-end gap-8 mt-16 md:mt-0">
