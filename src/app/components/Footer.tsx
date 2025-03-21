@@ -92,15 +92,22 @@ const Footer = () => {
                   </div>
                 </div>
               </a>
-              <div className="mt-4">
-              <a
-                href="https://wa.me/2347052302000"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline ml-2"
-              >
-                Chat on WhatsApp
-              </a>
+              <div className="mt-4 flex flex-col gap-2">
+                <div>
+                  <a
+                    href="https://wa.me/2347052302000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline ml-2"
+                  >
+                    Chat on WhatsApp
+                  </a>
+                </div>
+                <div className="ml-2">
+                  <a target="_blank" href="https://github.com/amanzecodes" className="hover:underline">
+                    Github
+                  </a>
+                </div>
               </div>
             </div>
             <div className="md:col-span-1">
