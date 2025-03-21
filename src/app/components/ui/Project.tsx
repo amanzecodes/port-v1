@@ -1,5 +1,5 @@
 "use client";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { SiGithub } from "react-icons/si";
 
 
@@ -49,10 +49,12 @@ const Project = ({ title, subheading, imageUrl, href, githubhref }: ProjectProps
         </div>
         <div className="p-2 flex items-center justify-center py-2 mt-6 sm:mt-10 rounded-md h-full w-full shadow-2xl">
           <div className="shadow-xl rounded-md overflow-hidden">
-            <img
+            <Image
               src={imageUrl.src}
               alt="Project Image"
               className="rounded-md shadow-lg w-full"
+              width={1500}
+              height={1000}
             />
           </div>
         </div>
