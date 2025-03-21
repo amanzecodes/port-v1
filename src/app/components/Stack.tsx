@@ -5,7 +5,7 @@ export default function Stack() {
     <section id="stack">
       <div className="container">
       <div className="flex items-center justify-center py-20 md:py-12 sm:py-8">
-        <h1 className="text-stone-200 text-6xl md:text-5xl sm:text-2xl">My Development Stack</h1>
+        <h1 className="text-stone-200 lg:text-6xl md:text-5xl sm:text-3xl">My Development Stack</h1>
       </div>
     <div className="max-w-5xl mx-auto px-8">
       <HoverEffect items={stack} />
