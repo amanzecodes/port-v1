@@ -35,6 +35,7 @@ const Hero = () => {
              before:bg-gradient-to-r before:from-transparent before:via-gray-600 before:to-transparent before:-translate-x-1/2"
             style={{
               backgroundImage: "url(/image.png)",
+              backgroundRepeat: "no-repeat"
             }}
     >
       <div className="w-full container">

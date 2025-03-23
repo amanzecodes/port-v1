@@ -1,6 +1,7 @@
 "use client";
 import { motion, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 const navItems = [
   {
@@ -114,13 +115,13 @@ const Header = () => {
 
   return (
     <header>
-      <div className="fixed top-0 left-0 w-full h-0 overflow-hidden bg-[#0e1016] z-30" ref={navScope}>
+      <div className="fixed top-0 left-0 w-full h-0 overflow-hidden bg-slate-950 z-30" ref={navScope}>
         <nav className="mt-20 flex flex-col">
           {navItems.map(({ label, href }) => (
             <a
               href={href}
               key={label}
-              className="border-t last:border-b border-stone-800 py-10 group/nav-item relative isolate"
+              className="border-t last:border-b border-stone-200 py-10 group/nav-item relative isolate"
               onClick={() => {setIsOpen(false)}}
             > 
               <div className="container !max-w-full flex items-center justify-between">
@@ -140,22 +141,22 @@ const Header = () => {
                   />
                 </svg>
               </div>
-              <div className="absolute w-full h-0 bg-[#212531] group-hover/nav-item:h-full transition-all duration-500 bottom-0 -z-10"></div>
+              <div className="absolute w-full h-0 bg-slate-900 group-hover/nav-item:h-full transition-all duration-500 bottom-0 -z-10"></div>
             </a>
           ))}
         </nav>
       </div>
-      <div className="fixed top-0 left-0 w-full z-40 backdrop-blur-md bg-[#0e1016]/30 shadow-md transition-colors duration-300">
+      <div className={twMerge("absolute top-0 left-0 w-full z-40 transition-colors duration-300", isOpen && "fixed")}>
         <div className="flex items-center justify-between w-full mx-auto px-4 sm:px-6 py-3">
           <a
             href="/"
-            className="text-lg sm:text-xl font-medium cursor-pointer hover:scale-105 transition duration-500"
+            className="text-base md:text-xl font-medium cursor-pointer hover:scale-105 transition duration-500"
           >
             Amanze Bruno.
           </a>
           <div className="flex flex-row gap-6 items-center">
             <div
-              className="border-2 rounded-full p-2 cursor-pointer hover:bg-[#212531] hover:text-stone-200 transition-all duration-500 border-stone-500 text-stone-200"
+              className="border-2 rounded-full p-2 cursor-pointer hover:bg-slate-800 hover:text-stone-200 transition-all duration-500 border-stone-500 text-stone-200"
               onClick={() => setIsOpen(!isOpen)}
             >
               <svg
@@ -192,7 +193,7 @@ const Header = () => {
             <div className="hidden md:flex justify-center items-center">
               <a
                 href="mailto:brunoamanze67@gmail.com"
-                className="px-6 h-11 flex items-center justify-center border-2 rounded-2xl transition border-stone-400 text-stone-200 hover:bg-[#212531] hover:text-white"
+                className="px-6 h-11 flex items-center justify-center border-2 rounded-2xl transition border-stone-400 text-stone-200 hover:bg-slate-900 hover:text-white"
               >
                 Contact me
               </a>

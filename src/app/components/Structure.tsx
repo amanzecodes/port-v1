@@ -22,7 +22,7 @@ const projects = [
     subheading: "2024",
     imageUrl: project2,
     description:
-      "This landing page is a versatile software-as-a-service platform designed to help businesses scale, automate, and optimize their operations effortlessly.",
+      "This is the landing page for a versatile software-as-a-service platform designed to help businesses scale, automate, and optimize their operations effortlessly.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer"],
     reverse: false, // Reverse order (Description first, then image)
     href: "https://amanze-saas.vercel.app/",

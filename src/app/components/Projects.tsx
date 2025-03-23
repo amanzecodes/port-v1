@@ -17,7 +17,7 @@ const Projects: FC = () => {
   return (
     <section id="projects" className="py-24 md:py-32 lg:py-40">
       <div>
-        <h1 className="font-thin text-4xl md:text-7xl text-center">Selected Works</h1>
+        <h1 className="font-light text-4xl md:text-7xl text-center">Selected <span className="">Works</span></h1>
       </div>
 
       {/* Show only on sm and md */}
@@ -31,7 +31,7 @@ const Projects: FC = () => {
                 target="_blank"
                 className="border-stone-200 font-thin border-t last:border-b border-dotted py-6 md:py-8 lg:py-12 flex flex-col relative group/project"
               >
-                <div className="absolute bottom-0 left-0 w-full h-0 group-hover/project:h-full transition-all duration-700 bg-[#212531]"></div>
+                <div className="absolute bottom-0 left-0 w-full h-0 group-hover/project:h-full transition-all duration-700 bg-slate-800"></div>
                 <div className="relative">
                   <div className="aspect-video md:hidden relative overflow-hidden">
                     <Image

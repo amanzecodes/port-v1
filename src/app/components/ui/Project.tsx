@@ -13,7 +13,7 @@ interface ProjectProps {
 
 const Project = ({ title, subheading, imageUrl, href, githubhref }: ProjectProps) => {
   return (
-    <div className="relative rounded-3xl h-auto w-full sm:h-[300px] sm:w-[350px] md:h-[400px] md:w-[500px] lg:h-[600px] lg:w-[800px] overflow-hidden bg-slate-900/30">
+    <div className="relative rounded-3xl h-auto w-full sm:h-[300px] sm:w-[350px] md:h-[400px] md:w-[500px] lg:h-[600px] lg:w-[800px] overflow-hidden bg-slate-900/30 shadow-sm border-2 border-white/25">
       {/* Overlay Content */}
       <div className="relative py-6 px-4">
         <div className="flex justify-between">
@@ -23,11 +23,11 @@ const Project = ({ title, subheading, imageUrl, href, githubhref }: ProjectProps
           </div>
           <div className="flex items-center gap-2 sm:gap-4">
             <a href={githubhref} target="_blank">
-            <div className="p-3 sm:p-4 border-2 border-stone-200 bg-transparent rounded-full cursor-pointer hover:bg-stone-200 transition-all duration-200 group/git">
+            <div className="p-3 sm:p-4 border-2 border-white/25 bg-transparent rounded-full cursor-pointer hover:bg-stone-200 transition-all duration-500 group/git">
               <SiGithub className="text-white size-5 sm:size-6 group-hover/git:text-black" />
             </div>
             </a>
-            <div className="p-3 sm:p-4 rounded-full border-2 border-stone-200 bg-transparent cursor-pointer hover:bg-stone-200 transition-all duration-200 group">
+            <div className="p-3 sm:p-4 rounded-full border-2 border-white/25 bg-transparent cursor-pointer hover:bg-stone-200 transition-all duration-500 group">
               <a href={href} target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

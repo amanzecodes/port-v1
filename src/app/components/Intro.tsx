@@ -31,7 +31,7 @@ const Intro: FC = () => {
   return (
     <section id="intro" className="py-24 mt-12 md:py-32 lg:py-40 md:mt-16 lg:mt-20" ref={scope}>
       <div className="container text-wrap">
-        <h2 className="text-3xl md:text-6xl lg:text-8xl lg:w-[80%] font-extralight leading-tight">
+        <h2 className="text-3xl md:text-6xl lg:text-8xl lg:w-[80%] font-thin leading-tight">
           Crafting functional websites with clean code and smart structure to
           help your business thrive and shine online
         </h2>
