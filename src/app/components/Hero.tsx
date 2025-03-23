@@ -33,6 +33,9 @@ const Hero = () => {
       className="relative flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 min-h-screen text-center text-gray-900
              border-b border-gray-300/50 before:absolute before:bottom-0 before:left-1/2 before:w-32 before:h-[2px] 
              before:bg-gradient-to-r before:from-transparent before:via-gray-600 before:to-transparent before:-translate-x-1/2"
+            style={{
+              backgroundImage: "url(/image.png)",
+            }}
     >
       <div className="w-full container">
         <Spotlight
@@ -53,9 +56,9 @@ const Hero = () => {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
+            transition={{ duration: 1, delay: 0.8 }}
             ref={textScope}
-            className="font-medium text-lg sm:text-xl mt-4 sm:mt-6 text-stone-200"
+            className="font-light text-sm md:text-xl mt-4 sm:mt-6 text-stone-200"
           >
             Hi 👋 I&apos;m Amanze Bruno, a full-stack web developer based in
             Lagos, Nigeria.

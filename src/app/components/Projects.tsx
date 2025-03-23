@@ -15,7 +15,7 @@ const projects = [
 
 const Projects: FC = () => {
   return (
-    <section id="projects" className="py-24 md:py-32 lg:py-40 border-t border-stone-200">
+    <section id="projects" className="py-24 md:py-32 lg:py-40">
       <div>
         <h1 className="font-thin text-4xl md:text-7xl text-center">Selected Works</h1>
       </div>

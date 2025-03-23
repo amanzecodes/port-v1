@@ -7,7 +7,7 @@ import SplitType from "split-type";
 const Intro: FC = () => {
   const [scope, animate] = useAnimate()
   const inView = useInView(scope, {
-    once: false,
+    once: true,
   })
 
   useEffect(() => {
