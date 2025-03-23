@@ -12,7 +12,7 @@ const About = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
     >
-      <div className="container">
+      <div className="container px-10">
         <motion.div
           className="flex flex-col md:flex-col lg:flex-row w-full justify-between items-center py-10 border-t border-b border-dotted border-stone-200 gap-6 md:gap-8"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -39,11 +39,11 @@ const About = () => {
             viewport={{ once: true }}
           >
             <div className="flex flex-col gap-6">
-              <p className="text-xl md:text-2xl lg:text-4xl font-extralight">
+              <p className="text-xl md:text-2xl lg:text-4xl font-extralight text-wrap">
                 "I build modern, responsive websites and full-stack applications
                 for businesses and personal brands. With expertise in Next.js,
                 Framer Motion, and Express.js, I create fast, visually
-                appealing, and user-friendly web experiences—seamlessly handling
+                appealing web experiences—seamlessly handling
                 both frontend and backend development.
               </p>
               <p className="text-xl md:text-2xl lg:text-4xl font-extralight">
