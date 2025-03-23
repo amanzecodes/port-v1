@@ -37,7 +37,7 @@ const Footer = () => {
     }
   }, [inView, entranceAnimation]);
   return (
-    <footer id="contact" className="bg-[#0e1016] text-white">
+    <footer id="contact" className="text-white">
       <div className="container">
         <div className="py-24 md:py-32 lg:py-40">
           <div className="flex items-center gap-3">

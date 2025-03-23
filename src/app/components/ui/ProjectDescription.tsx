@@ -14,7 +14,7 @@ const ProjectDescription = ({ description, stack }: ProjectDescriptionProps) => 
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="rounded-3xl bg-[#212531] 
+      className="rounded-3xl bg-slate-900/30
       w-full sm:w-[350px] md:w-[400px] lg:w-[450px] 
       h-auto sm:h-[350px] md:h-[450px] lg:h-[600px] 
       p-4 flex items-center justify-center shadow-lg"

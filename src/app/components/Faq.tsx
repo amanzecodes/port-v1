@@ -47,7 +47,7 @@ const Faq = () => {
                 }
               }}
             >
-              <div className={twMerge("absolute h-0 w-full bottom-0 bg-[#212531] -z-10 group-hover/faq:h-full transition-all duration-700", index === selectIndex && "h-full")}></div>
+              <div className={twMerge("absolute h-0 w-full bottom-0 bg-slate-900/30 -z-10 group-hover/faq:h-full transition-all duration-700", index === selectIndex && "h-full")}></div>
               <div className={twMerge("flex items-center justify-between gap-4 transition-all duration-700 group-hover/faq:lg:px-8", index === selectIndex && "lg:px-8")}>
                 <div className="text-2xl md:text-3xl lg:text-4xl font-extralight">{question}</div>
                 <div className={twMerge("inline-flex items-center justify-center size-11 cursor-pointer border border-stone-900 rounded-full shrink-0 transition duration-300 bg-[#212531]", index === selectIndex && "rotate-45") }>
