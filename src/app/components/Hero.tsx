@@ -40,7 +40,11 @@ const Hero = () => {
       <div className="w-full container">
         <Spotlight
           className="absolute-top-40 left-0 md:-top-20 md:left-60"
-          fill="white"
+          fill="blue"
+        />
+        <Spotlight
+          className="absolute-top-40 left-0 md:-top-20 md:left-60"
+          fill="purple"
         />
         <div className="flex items-center justify-center w-full flex-col px-4">
           <div className="max-w-5xl sm:flex justify-center items-center">
