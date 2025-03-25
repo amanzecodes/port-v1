@@ -5,7 +5,7 @@ import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 
 const Approach = () => {
   return (
-    <section className="w-full py-24">
+    <section id="approach" className="w-full py-24">
       <div className="container">
         <div className="flex items-center justify-center">
         <h1 className="font-medium text-6xl">

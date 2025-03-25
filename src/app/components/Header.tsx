@@ -24,6 +24,10 @@ const navItems = [
     label: "Contact",
     href: "#contact",
   },
+  {
+    label: "Approach",
+    href: "#approach",
+  }
 ];
 
 const Header = () => {
