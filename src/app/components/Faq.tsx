@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Are you available for freelance work?",
     answer:
-      "Yes! I am open to freelance projects, collaborations that align with my expertise.",
+      "Yes! I am open to freelance projects and collaborations that align with my expertise.",
   },
   {
     question: "Can I hire you to build a website or web app?",
