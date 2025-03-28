@@ -131,9 +131,9 @@ const Card = ({
         </h2>
         {/* add this one for the description */}
         <p
-          className="text-sm opacity-0 group-hover/canvas-card:opacity-100
+          className="text-base opacity-0 group-hover/canvas-card:opacity-100
          relative z-10 mt-4 group-hover/canvas-card:text-white text-center
-         group-hover/canvas-card:-translate-y-2 transition duration-200"
+         group-hover/canvas-card:-translate-y-2 transition duration-200 font-bold"
           style={{ color: "#E4ECFF" }}
         >
           {des}
