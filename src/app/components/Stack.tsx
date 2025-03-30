@@ -24,13 +24,13 @@ export const stack = [
   {
     title: "Backend",
     description:
-      "Node JS—Express JS.",
+      "Node JS—Express JS, Next Auth",
     
   },
   {
     title: "Utilities",
     description:
-      "Zustand, Clerk, Axios, Zod, Prisma.",
+      "Zustand, Clerk, Axios, Zod, Prisma, React Hook Form",
     
   },
   {
