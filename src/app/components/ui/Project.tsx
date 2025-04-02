@@ -27,8 +27,8 @@ const Project = ({ title, subheading, imageUrl, href, githubhref }: ProjectProps
               <SiGithub className="text-white size-5 sm:size-6 group-hover/git:text-black" />
             </div>
             </a>
-            <div className="p-3 sm:p-4 rounded-full border-2 border-white/25 bg-transparent cursor-pointer hover:bg-stone-200 transition-all duration-500 group">
               <a href={href} target="_blank">
+            <div className="p-3 sm:p-4 rounded-full border-2 border-white/25 bg-transparent cursor-pointer hover:bg-stone-200 transition-all duration-500 group">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -43,8 +43,8 @@ const Project = ({ title, subheading, imageUrl, href, githubhref }: ProjectProps
                   d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                 />
               </svg>
-              </a>   
             </div>
+              </a>   
           </div>
         </div>
         <div className="p-2 flex items-center justify-center py-2 mt-6 sm:mt-10 rounded-md h-full w-full shadow-2xl">
