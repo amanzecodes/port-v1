@@ -1,5 +1,5 @@
 "use client";
-
+import { BorderBeam } from "@/components/magicui/border-beam";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 
@@ -9,7 +9,11 @@ interface ProjectDescriptionProps {
   stack: string[];
 }
 
-const ProjectDescription = ({ className, description, stack }: ProjectDescriptionProps) => {
+const ProjectDescription = ({
+  className,
+  description,
+  stack,
+}: ProjectDescriptionProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -19,7 +23,7 @@ const ProjectDescription = ({ className, description, stack }: ProjectDescriptio
       className="rounded-3xl bg-slate-900/30
       w-full sm:w-[350px] md:w-[400px] lg:w-[450px] 
       h-auto sm:h-[350px] md:h-[450px] lg:h-[600px] 
-      p-4 flex items-center justify-center shadow-lg border-2 border-white/25"
+      p-4 flex items-center justify-center shadow-lg border-2 border-white/10"
     >
       <div>
         <motion.div
@@ -29,7 +33,12 @@ const ProjectDescription = ({ className, description, stack }: ProjectDescriptio
           viewport={{ once: true }}
           className="flex flex-col gap-4 py-2 p-2 border-t border-b border-stone-200 border-double"
         >
-          <h1 className={twMerge("text-lg sm:text-xl md:text-2xl lg:text-2xl text-white/60 font-light", className)}>
+          <h1
+            className={twMerge(
+              "text-lg sm:text-xl md:text-2xl lg:text-2xl text-white/60 font-light",
+              className
+            )}
+          >
             {description}
           </h1>
         </motion.div>

@@ -13,7 +13,7 @@ interface ProjectProps {
 
 const Project = ({ title, subheading, imageUrl, href, githubhref }: ProjectProps) => {
   return (
-    <div className="relative rounded-3xl h-auto w-full sm:h-[300px] sm:w-[350px] md:h-[400px] md:w-[500px] lg:h-[600px] lg:w-[800px] overflow-hidden bg-slate-900/30 shadow-sm border-2 border-white/25">
+    <div className="relative rounded-3xl h-auto w-full sm:h-[300px] sm:w-[350px] md:h-[400px] md:w-[500px] lg:h-[600px] lg:w-[800px] overflow-hidden bg-slate-900/30 shadow-sm border-2 border-white/10">
       {/* Overlay Content */}
       <div className="relative py-6 px-4">
         <div className="flex justify-between">
@@ -59,6 +59,7 @@ const Project = ({ title, subheading, imageUrl, href, githubhref }: ProjectProps
           </div>
         </div>
       </div>
+
     </div>
   );
 };

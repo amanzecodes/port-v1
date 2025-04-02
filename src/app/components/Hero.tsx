@@ -4,6 +4,7 @@ import SplitType from "split-type";
 import { useAnimate, motion, stagger } from "framer-motion";
 import { Spotlight } from "./ui/Spotlight";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 const Hero = () => {
   const [titleScope, titleAnimate] = useAnimate();
