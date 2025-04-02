@@ -24,7 +24,7 @@ const projects = [
     imageUrl: project1,
     description:
       "Layers Sigma is a modern, visually stunning web platform that showcases cutting-edge UI/UX design principles with a focus on smooth animations, layered aesthetics, and interactive elements.",
-    stack: ["React", "Next.js", "Tailwind CSS", "Framer"],
+    stack: ["React", "Next.js", "Typescript", "Tailwind CSS", "Framer"],
     reverse: false, // Normal order (Image first, then description)
     href:"https://layers-sigma.vercel.app/",
     githubhref:"https://github.com/amanzecodes/Layers"
