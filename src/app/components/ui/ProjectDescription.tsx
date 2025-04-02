@@ -1,13 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { twMerge } from "tailwind-merge";
 
 interface ProjectDescriptionProps {
+  className?: string;
   description: string;
   stack: string[];
 }
 
-const ProjectDescription = ({ description, stack }: ProjectDescriptionProps) => {
+const ProjectDescription = ({ className, description, stack }: ProjectDescriptionProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -27,7 +29,7 @@ const ProjectDescription = ({ description, stack }: ProjectDescriptionProps) => 
           viewport={{ once: true }}
           className="flex flex-col gap-4 py-2 p-2 border-t border-b border-stone-200 border-double"
         >
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/60 font-light">
+          <h1 className={twMerge("text-lg sm:text-xl md:text-2xl lg:text-2xl text-white/60 font-light", className)}>
             {description}
           </h1>
         </motion.div>

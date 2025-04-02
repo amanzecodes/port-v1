@@ -3,10 +3,12 @@ import image2 from "../../../assets/images/project1.png";
 import image3 from "../../../assets/images/image3.png";
 import image5 from "../../../assets/images/image5.png";
 import image7 from "../../../assets/images/image7.png";
+import socially from "../../../assets/images/socially.png"
 import Image from "next/image";
 import Structure from "./Structure";
 
 const projects = [
+  {name: "Socially", image: socially, href: "https://socially-amanze.vercel.app/"},
   { name: "Layers", image: image2, href: "https://layers-sigma.vercel.app/" },
   { name: "Saas Landing Page", image: image5, href: "https://amanze-saas.vercel.app/" },
   { name: "XORA", image: image7, href: "https://xora-a.vercel.app/" },
