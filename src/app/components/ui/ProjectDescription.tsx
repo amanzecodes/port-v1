@@ -1,5 +1,4 @@
 "use client";
-import { BorderBeam } from "@/components/magicui/border-beam";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 
@@ -49,6 +48,7 @@ const ProjectDescription = ({
           viewport={{ once: true }}
           className="py-4 flex flex-wrap gap-2 sm:gap-4"
         >
+          {" "}
           {stack.map((tech, index) => (
             <motion.span
               key={index}
@@ -56,7 +56,8 @@ const ProjectDescription = ({
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.6 + index * 0.1, duration: 0.4 }}
               viewport={{ once: true }}
-              className="px-3 py-1 bg-white/10 text-white rounded-lg text-sm sm:text-base"
+              className="px-3 py-1.5 bg-gradient-to-r from-slate-800/80 to-slate-700/60 text-white/90 border border-white/10 rounded-full text-xs sm:text-sm font-medium tracking-wide shadow-sm backdrop-blur-sm hover:bg-slate-700/70 hover:border-white/20 transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
             >
               {tech}
             </motion.span>

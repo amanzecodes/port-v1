@@ -5,8 +5,30 @@ import project2 from "../../../assets/images/image5.png";
 import project3 from "../../../assets/images/image7.png";
 import project4 from "../../../assets/images/image3.png";
 import socially from "../../../assets/images/socially.png"
+import bluelink from '../../../assets/images/project11.png'
 
-const projects = [
+interface ProjectProps {
+  title: string;
+  subheading: string;
+  imageUrl: any;
+  description: string;
+  stack: string[];
+  reverse: boolean;
+  href?: string;
+  githubhref?: string;
+}
+
+const projects: ProjectProps[] = [
+  {
+    title: "BlueLink SBS",
+    subheading: "2025",
+    imageUrl: bluelink,
+    description: "BlueLink – Escrow-powered payments with airtight encryption. A secure, seamless platform that holds funds, ensures satisfaction, and releases payment only when conditions are met—building trust and boosting conversion for buyers and sellers alike.",
+    stack: ["Next.js", "Tailwind CSS", "Typescript", "FastApi", "Paystack Api", "Alembic", "SQLAlchemy"],
+    reverse: true, 
+    href: "https://www.bluel.ink/",
+    githubhref: "https://github.com/amanzecodes/bluelink"
+  },
   {
     title: "Socially",
     subheading: "2025",
