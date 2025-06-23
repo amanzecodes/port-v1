@@ -25,7 +25,7 @@ const projects: ProjectProps[] = [
     imageUrl: bluelink,
     description: "BlueLink – Escrow-powered payments with airtight encryption. A secure, seamless platform that holds funds, ensures satisfaction, and releases payment only when conditions are met—building trust and boosting conversion for buyers and sellers alike.",
     stack: ["Next.js", "Tailwind CSS", "Typescript", "FastApi", "Paystack Api", "Alembic", "SQLAlchemy"],
-    reverse: true, 
+    reverse: false, 
     href: "https://www.bluel.ink/",
     githubhref: "https://github.com/amanzecodes/bluelink"
   },
