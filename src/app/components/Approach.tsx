@@ -9,7 +9,7 @@ const Approach = () => {
       <div className="container">
         <div className="flex items-center justify-center">
         <h1 className="font-medium text-6xl">
-          My <span className="text-purple-400">approach</span>
+          My <span className="text-purple-400">Approach</span>
         </h1>
         </div>
         {/* remove bg-white dark:bg-black */}
