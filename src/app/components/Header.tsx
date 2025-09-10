@@ -209,14 +209,14 @@ const Header = () => {
         <div className="flex items-center justify-between w-full mx-auto px-4 sm:px-6 py-3">
           <a
             href="/"
-            className="text-base md:text-xl font-medium cursor-pointer hover:scale-105 transition duration-500"
+            className="text-base md:text-xl font-medium cursor-pointer transition duration-500"
           >
             Amanze Bruno.
           </a>
           <div className="flex flex-row gap-6 items-center">
             {" "}
             <motion.div
-              className="border-2 rounded-full p-2 cursor-pointer hover:bg-slate-800 hover:text-stone-200 transition-colors border-stone-500 text-stone-200 relative overflow-hidden group"
+              className="border-2 rounded-full p-2 cursor-pointer hover:bg-white hover:text-black transition-colors border-stone-500 text-stone-200 relative overflow-hidden group"
               onClick={() => setIsOpen(!isOpen)}
               whileTap={{ scale: 0.95 }}
               whileHover={{ borderColor: "rgb(226 232 240)" }}
@@ -267,7 +267,7 @@ const Header = () => {
             <div className="hidden md:flex justify-center items-center">
               <a
                 href="mailto:brunoamanze67@gmail.com"
-                className="px-6 h-11 flex items-center justify-center border-2 rounded-2xl transition border-stone-400 text-stone-200 hover:bg-slate-900 hover:text-white"
+                className="px-6 h-11 flex items-center justify-center border-2 transition border-stone-400 text-stone-200 hover:bg-white hover:text-black"
               >
                 Contact me
               </a>
