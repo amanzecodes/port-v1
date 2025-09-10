@@ -30,11 +30,11 @@ const ProjectDescription = ({
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="flex flex-col gap-4 py-2 p-2 border-t border-b border-stone-200 border-double"
+          className="flex flex-col gap-4 py-4 p-2 border-t border-b border-stone-200 border-dotted"
         >
           <h1
             className={twMerge(
-              "text-lg sm:text-xl md:text-2xl lg:text-2xl text-white/60 font-light",
+              "sm:text-xl md:text-xl lg:text-xl text-white/60 font-light",
               className
             )}
           >
@@ -56,7 +56,7 @@ const ProjectDescription = ({
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.6 + index * 0.1, duration: 0.4 }}
               viewport={{ once: true }}
-              className="px-3 py-1.5 bg-gradient-to-r from-slate-800/80 to-slate-700/60 text-white/90 border border-white/10 rounded-full text-xs sm:text-sm font-medium tracking-wide shadow-sm backdrop-blur-sm hover:bg-slate-700/70 hover:border-white/20 transition-all duration-300"
+              className="px-3 py-1.5 bg-gradient-to-r from-slate-800/80 to-slate-700/60 text-white/90 border border-white/10 rounded-full text-xs sm:text-sm font-medium tracking-wide shadow-sm backdrop-blur-sm hover:bg-slate-700/70 hover:border-white/20 transition-all duration-300 cursor-pointer"
               whileHover={{ scale: 1.05 }}
             >
               {tech}
