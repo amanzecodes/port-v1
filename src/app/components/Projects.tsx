@@ -21,7 +21,7 @@ const Projects: FC = () => {
   return (
     <section id="projects" className="py-24 md:py-32 lg:py-40">
       <div>
-        <h1 className="font-light text-4xl md:text-7xl text-center">Selected <span className="">Works</span></h1>
+        <h1 className="font-light text-4xl md:text-7xl text-center">Selected <span className="text-purple-400">Works</span></h1>
       </div>
 
       {/* Show only on sm and md */}
