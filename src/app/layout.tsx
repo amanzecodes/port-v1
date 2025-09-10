@@ -14,8 +14,8 @@ const archivo = Archivo({
 })
 
 export const metadata: Metadata = {
-  title: "Amanze Jnr. Portfolio",
-  description: "Amanze Bruno's Portfolio",
+  title: "Amanze Bruno ── Software Engineer",
+  description: "Amanze Bruno' Portfolio",
 };
 
 export default function RootLayout({
@@ -25,6 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body
         className={`antialiased ${archivo.variable} font-sans bg-slate-950 text-stone-200`}
       > 
