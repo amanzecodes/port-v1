@@ -63,17 +63,6 @@ const projects: ProjectProps[] = [
     githubhref: "https://github.com/amanzecodes/Landing-page"
   },
   {
-    title: "XORA",
-    subheading: "2025",
-    imageUrl: project3,
-    description:
-      "Xora is a futuristic, visually striking web experience featuring smooth animations, dynamic transitions, and a sleek, minimal aesthetic",
-    stack: ["React JS", "Tailwind CSS"],
-    reverse: false, // Normal order
-    href: "https://xora-a.vercel.app/",
-    githubhref: "https://github.com/amanzecodes/XORA",
-  },
-  {
     title: "VirtualR",
     subheading: "2023",
     imageUrl: project4,
