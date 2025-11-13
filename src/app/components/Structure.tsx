@@ -2,8 +2,8 @@ import Project from "./ui/Project";
 import ProjectDescription from "./ui/ProjectDescription";
 import project1 from "../../../assets/images/project1.png";
 import project2 from "../../../assets/images/image5.png";
-import project3 from "../../../assets/images/image7.png";
 import project4 from "../../../assets/images/image3.png";
+import edusiri from "../../../assets/images/edusirii.png"
 import socially from "../../../assets/images/socially.png"
 import bluelink from '../../../assets/images/project11.png'
 
@@ -41,13 +41,24 @@ const projects: ProjectProps[] = [
     githubhref:"https://github.com/amanzecodes/socially"
   },
   {
+    title: "EduSiri (in progress)",
+    subheading: "2025",
+    imageUrl: edusiri,
+    description:
+      "An AI-powered school management system, that ensures seamless school management operations",
+    stack: ["Next.js", "Tailwind CSS", "Typescript", "Node JS", "Prisma", "Postgresql", "Express", "Cloudinary"],
+    reverse: false, 
+    href:"",
+    githubhref:"https://github.com/amanzecodes/EdAfrika_Backend"
+  },
+  {
     title: "Layers",
     subheading: "2025",
     imageUrl: project1,
     description:
       "Layers Sigma is a modern, visually stunning web platform that showcases cutting-edge UI/UX design principles with a focus on smooth animations, layered aesthetics, and interactive elements.",
     stack: ["React", "Next.js", "Typescript", "Tailwind CSS", "Framer"],
-    reverse: false, // Normal order (Image first, then description)
+    reverse: true, // Normal order (Image first, then description)
     href:"https://layers-sigma.vercel.app/",
     githubhref:"https://github.com/amanzecodes/Layers"
   },
@@ -58,7 +69,7 @@ const projects: ProjectProps[] = [
     description:
       "This is the landing page for a versatile software-as-a-service platform designed to help businesses scale, automate, and optimize their operations effortlessly.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer"],
-    reverse: true, // Reverse order (Description first, then image)
+    reverse: false, // Reverse order (Description first, then image)
     href: "https://amanze-saas.vercel.app/",
     githubhref: "https://github.com/amanzecodes/Landing-page"
   },
