@@ -41,14 +41,14 @@ const projects: ProjectProps[] = [
     githubhref:"https://github.com/amanzecodes/socially"
   },
   {
-    title: "EduSiri (in progress)",
+    title: "EduSiri",
     subheading: "2025",
     imageUrl: edusiri,
     description:
-      "An AI-powered school management system, that ensures seamless school management operations",
+      "A digital school management system designed to support modern academic administration.",
     stack: ["Next.js", "Tailwind CSS", "Typescript", "Node JS", "Prisma", "Postgresql", "Express", "Cloudinary"],
     reverse: false, 
-    href:"",
+    href:"https://edusirii.com/",
     githubhref:"https://github.com/amanzecodes/EdAfrika_Backend"
   },
   {

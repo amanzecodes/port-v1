@@ -11,7 +11,7 @@ import Structure from "./Structure";
 const projects = [
   {name: "BlueLink SBS", image: bluelink, href: "https://www.bluel.ink/"},
   {name: "Socially", image: socially, href: "https://socially-amanze.vercel.app/"},
-  {name: "Edusiri (in progress)", image: edusiri, href: "https://github.com/amanzecodes/EdAfrika_Backend"},
+  {name: "Edusiri", image: edusiri, href: "https://edusirii.com/"},
   { name: "Layers", image: image2, href: "https://layers-sigma.vercel.app/" },
   { name: "Saas Landing Page", image: image5, href: "https://amanze-saas.vercel.app/" },
   { name: "VirtualR", image: image3, href: "https://virtual-r-one-ochre.vercel.app/" },
