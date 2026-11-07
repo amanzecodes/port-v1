@@ -1,20 +1,16 @@
 import { FC } from "react";
 import image2 from "../../../assets/images/project1.png";
-import image3 from "../../../assets/images/image3.png";
-import image5 from "../../../assets/images/image5.png";
-import edusiri from "../../../assets/images/edusirii.png";
 import socially from "../../../assets/images/socially.png"
 import bluelink from '../../../assets/images/project11.png'
+import payflow from '../../../assets/images/payflow.png'
 import Image from "next/image";
 import Structure from "./Structure";
 
 const projects = [
+  {name: "Payflow", image: payflow, href: "https://payflow-lemon.vercel.app/"},
   {name: "BlueLink SBS", image: bluelink, href: "https://www.bluel.ink/"},
   {name: "Socially", image: socially, href: "https://socially-amanze.vercel.app/"},
-  {name: "Edusiri", image: edusiri, href: "https://edusirii.com/"},
   { name: "Layers", image: image2, href: "https://layers-sigma.vercel.app/" },
-  { name: "Saas Landing Page", image: image5, href: "https://amanze-saas.vercel.app/" },
-  { name: "VirtualR", image: image3, href: "https://virtual-r-one-ochre.vercel.app/" },
 ];
 
 const Projects: FC = () => {

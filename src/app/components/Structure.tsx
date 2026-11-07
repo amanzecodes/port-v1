@@ -1,12 +1,9 @@
 import Project from "./ui/Project";
 import ProjectDescription from "./ui/ProjectDescription";
 import project1 from "../../../assets/images/project1.png";
-import project2 from "../../../assets/images/image5.png";
-import project4 from "../../../assets/images/image3.png";
-import edusiri from "../../../assets/images/edusirii.png"
 import socially from "../../../assets/images/socially.png"
 import bluelink from '../../../assets/images/project11.png'
-
+import payflow from '../../../assets/images/payflow.png'
 interface ProjectProps {
   title: string;
   subheading: string;
@@ -19,6 +16,17 @@ interface ProjectProps {
 }
 
 const projects: ProjectProps[] = [
+   {
+    title: "Payflow",
+    subheading: "2026",
+    imageUrl: payflow,
+    description:
+      "A payment reconciliation engine, track who paid, you could also pay your bills with collected payments from your customers",
+    stack: ["Next JS", "Tailwind CSS", "TypeScript", "ExpressJS", "PostgreSQL", "PrismaORM"],
+    reverse: true, // Normal order
+    href: "https://payflow-lemon.vercel.app/",
+    githubhref: "https://github.com/amanzecodes/payflow",
+  },
   {
     title: "BlueLink SBS",
     subheading: "2025",
@@ -41,17 +49,6 @@ const projects: ProjectProps[] = [
     githubhref:"https://github.com/amanzecodes/socially"
   },
   {
-    title: "EduSiri",
-    subheading: "2025",
-    imageUrl: edusiri,
-    description:
-      "A digital school management system designed to support modern academic administration.",
-    stack: ["Next.js", "Tailwind CSS", "Typescript", "Node JS", "Prisma", "Postgresql", "Express", "Cloudinary"],
-    reverse: false, 
-    href:"https://edusirii.com/",
-    githubhref:"https://github.com/amanzecodes/EdAfrika_Backend"
-  },
-  {
     title: "Layers",
     subheading: "2025",
     imageUrl: project1,
@@ -61,29 +58,7 @@ const projects: ProjectProps[] = [
     reverse: true, // Normal order (Image first, then description)
     href:"https://layers-sigma.vercel.app/",
     githubhref:"https://github.com/amanzecodes/Layers"
-  },
-  {
-    title: "Saas Landing Page",
-    subheading: "2024",
-    imageUrl: project2,
-    description:
-      "This is the landing page for a versatile software-as-a-service platform designed to help businesses scale, automate, and optimize their operations effortlessly.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer"],
-    reverse: false, // Reverse order (Description first, then image)
-    href: "https://amanze-saas.vercel.app/",
-    githubhref: "https://github.com/amanzecodes/Landing-page"
-  },
-  {
-    title: "VirtualR",
-    subheading: "2023",
-    imageUrl: project4,
-    description:
-      "VirtualR is a cutting-edge platform designed to bridge the gap between physical and remote experiences by offering an immersive virtual environment for collaboration, learning, and engagement.",
-    stack: ["React JS", "Tailwind CSS"],
-    reverse: true, // Normal order
-    href: "https://virtual-r-one-ochre.vercel.app/",
-    githubhref: "https://github.com/amanzecodes/Virtual-R",
-  },
+  }
 ];
 
 const Structure = () => {
