@@ -267,7 +267,7 @@ const Header = () => {
             <div className="hidden md:flex justify-center items-center">
               <a
                 href="mailto:brunoamanze67@gmail.com"
-                className="px-6 h-11 flex items-center justify-center border-2 transition border-stone-400 text-stone-200 hover:bg-white hover:text-black"
+                className="px-6 h-11 flex items-center justify-center border-2 transition border-stone-400 text-stone-200 hover:bg-white hover:text-black rounded-full"
               >
                 Contact me
               </a>
